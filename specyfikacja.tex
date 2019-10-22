@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[MeX]{polski}
+\usepackage{tabularx}
+\usepackage[a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.5cm,includeheadfoot]{geometry}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+
+\title{Specyfikacja karaoke-app}
+\author{Grupa F}
+
+\begin{document}
+  \maketitle
+
+  \section{Wprowadzenie}
+  Aplikacja \textit{karaoke-app} ma za zadanie udostępnienie popularnej rozrywki, jaką jest Karaoke, poprzez wygodny i intuicyjny interfejs dostępny z poziomu przeglądarki internetowej. Użytkownik wybiera utwór spośród dostępnych w katalogu, lub dodaje nowy poprzez wizualny kreator dostępny dla zalogowanych użytkowników. Podczas odtwarzania utworu wyświetlany jest tekst z wyróżnioną aktualną linią do zaśpiewania (według czasu).
+
+  \section{Zespół}
+  \begin{itemize}
+    \item Dawid Bury (tester)   
+    \item Daniel Hajduk (frontend developer)
+    \item Adrian Korczykowski (dev-ops)
+    \item Łukasz Poterała (backend developer)
+    \item \underline{Mariusz Zdancewicz} (PM/frontend developer)
+  \end{itemize}
+
+  \section{Funkcjonalności}
+  Aplikacja powinna implementować następujące funkcjonalności:
+  \begin{itemize}
+    \item uwierzytelnianie użytkowników (także za pomocą wybranych social media),
+    \item katalog utworów:
+    \begin{itemize}
+      \item podział na kategorie,
+      \item wyszukiwarka utworów,
+      \item filtrowanie/sortowanie;
+    \end{itemize}
+    \item moduł karaoke:
+    \begin{itemize}
+      \item integracja z serwisem wideo,
+      \item wyświetlanie tekstu utworu,
+      \item wyróżnianie aktualnej linii tekstu (według czasu);
+    \end{itemize}
+    \item profil użytkownika:
+    \begin{itemize}
+      \item wyświetlanie podstawowych informacji o użytkowniku,
+      \item ulubione utwory,
+      \item utworzone playlisty,
+      \item ustawienia prywatności;
+    \end{itemize}
+    \item wizualny kreator utworu:
+    \begin{itemize}
+      \item wybór ścieżki utworu,
+      \item wprowadzanie metadanych utworu,
+      \item wprowadzanie tekstu utworu (z własnego źródła),
+      \item możliwość ustawienia znaczników czasu dla poszczególnych linii tekstu,
+      \item przypisiwanie utworu do kategorii,
+      \item dostęp tylko dla zalogowanych użytkowników;
+    \end{itemize}
+    \item playlisty:
+    \begin{itemize}
+      \item możliwość utworzenia przez użytkownika,
+      \item automatyczne przełączanie utworów,
+      \item ustawienia prywatności,
+      \item losowanie utworów na playliście;
+    \end{itemize}
+    \item panel administratora:
+    \begin{itemize}
+      \item zarządzanie użytkownikami,
+      \item zarządzanie katalogiem utworów,
+      \item moderacja utworów utworzonych za pomocą kreatora;
+    \end{itemize}
+    \item ocena utworów,
+    \item zgłaszanie problemów z utworem,
+    \item analiza ruchu.
+  \end{itemize}
+\end{document}
